@@ -6,3 +6,53 @@ body {
 * {
   box-sizing: border-box;
 }
+
+.images-parent {
+    overflow: hidden;
+    display: flex;
+    height: 500px;
+    width: 1500px;
+    margin: 0 auto;
+  }
+  
+  .images-parent div {
+    height: 400px;
+    min-width: 300px;
+    margin-left: 100px;
+    animation: slide 15s linear infinite;
+  }
+  
+  .project1 {
+    background-image: url(_assets/duck_vox.png);
+  }
+  
+  .project2 {
+    background-image: url(_assets/food.png);
+  }
+
+  .project3 {
+    background-image: url(_assets/kafka.png);
+  }
+
+  .project4 {
+    background-image: url(_assets/onlineShopping_core.jpeg);
+  }
+
+  .project5 {
+    background-image: url(_assets/duck_vox.png);
+  }
+
+  .project6 {
+    background-image: url(_assets/food.png);
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1500px, 0, 0);
+    }
+  }
+  
+
